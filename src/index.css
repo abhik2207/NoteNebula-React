@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 50px;
+}
+
+.note > span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.note {
+  background-color: #fffaad;
+  border-radius: 20px;
+  padding: 1.2rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #00000081;
+  transition: 0.5s;
+  font-size: 1.6rem;
+}
+
+.delete-icon:hover {
+  color: #000;
+}
+
+.note-footer > small {
+  color: #000000a6;
+}
+
+.add-note {
+  background-color: #b3ffad;
+}
+
+.add-note textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+.save {
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #00000093;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.save:hover {
+  background-color: #000;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgba(126, 126, 126, 0.336);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 1.8em;
+  gap: 20px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+}
+
+.toggle {
+  padding: 0.7rem 1.4rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #dadada;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.toggle:hover {
+  background-color: rgba(214, 214, 214, 0.548);
+}
+
+.dark-mode {
+  background-color: #000;
+}
+
+.dark-mode h1 {
+  color: #fff;
+}
+
+.dark-mode .search .search-icon {
+  color: #fff;
+}
